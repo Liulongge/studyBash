@@ -1,17 +1,17 @@
-echo "当前路径为：" && pwd
+
+echo -e "\e[1;33m 当前路径为: $(pwd) \e[0m"
+echo -e "\e[1;34m pushd ../: \e[0m"
 pushd ../
 
-echo "当前路径为：" && pwd
+echo -e "\e[1;33m 当前路径为: $(pwd) \e[0m"
+echo -e "\e[1;34m pushd ../: \e[0m"
+pushd ../
 
-pushd ~
-echo "当前路径为：" && pwd
-
+echo -e "\e[1;33m 当前路径为: $(pwd) \e[0m"
+echo -e "\e[1;34m popd: \e[0m"
 popd
-echo "当前路径为：" && pwd
-
+echo -e "\e[1;33m 当前路径为: $(pwd) \e[0m"
+echo -e "\e[1;34m popd: \e[0m"
 popd
-echo "当前路径为：" && pwd
+echo -e "\e[1;33m 当前路径为：$(pwd) \e[0m"
 
-echo -e "\e[1;31m This is red text \e[0m"
-
-echo -e "\e[1;32m Green \e[0m"
